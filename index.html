@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Essaoudi – Portfolio</title>
+  <meta name="description" content="Portfolio de Mohammed Essaoudi, étudiant en cybersécurité et développement logiciel.">
+  <meta property="og:title" content="Mohammed Essaoudi – Portfolio">
+  <meta property="og:description" content="Étudiant en cybersécurité, développement, réseaux & IA.">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    .typing-effect {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: .15em solid teal;
+      animation: typing 3s steps(40, end), blink .75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: teal; }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans scroll-smooth">
+
+  <div class="fixed top-4 right-4 z-50">
+    <button id="darkToggle" class="p-2 bg-gray-800 rounded text-white">🌓</button>
+  </div>
+
+  <header class="fixed top-0 w-full bg-gray-900 shadow-md z-40">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center px-4 py-4">
+      <h1 class="text-xl font-bold">Mohammed E.</h1>
+      <ul class="space-x-4 hidden md:flex">
+        <li><a href="#about" class="hover:text-teal-400">À propos</a></li>
+        <li><a href="#projects" class="hover:text-teal-400">Projets</a></li>
+        <li><a href="#skills" class="hover:text-teal-400">Compétences</a></li>
+        <li><a href="#education" class="hover:text-teal-400">Formation</a></li>
+        <li><a href="#contact" class="hover:text-teal-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="min-h-screen bg-cover bg-center flex items-center justify-center text-center px-4" style="background-image: url('assets/images/hero.jpg');">
+    <div class="bg-black bg-opacity-60 p-8 rounded">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4 text-white">Salut, moi c’est Mohammed</h2>
+      <p class="text-xl text-teal-400 typing-effect">Étudiant en cybersécurité & développement logiciel</p>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 px-4 max-w-4xl mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-4">À propos</h2>
+    <p class="text-lg text-gray-300 leading-relaxed">
+      Étudiant à l’EFREI Paris, passionné par la cybersécurité, les systèmes distribués et la data. Je cherche une alternance de 3 ans à partir de septembre 2025.
+    </p>
+
+    <div class="mt-6 flex flex-col sm:flex-row gap-4">
+      <a href="assets/CV-Mohammed-Essaoudi.pdf" download class="bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600 text-center">
+        📄 Télécharger mon CV
+      </a>
+      <a href="assets/CV-Mohammed-Essaoudi.pdf" target="_blank" class="bg-transparent border border-teal-500 text-teal-400 px-4 py-2 rounded hover:bg-teal-500 hover:text-white text-center">
+        👁️ Voir le CV
+      </a>
+    </div>
+  </section>
+
+
+    <section id="projects" class="py-20 bg-gray-800 px-4" data-aos="fade-up">
+        <div class="max-w-6xl mx-auto">
+              <h2 class="text-3xl font-semibold mb-8 text-center">Mes projets</h2>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gray-700 p-6 rounded-lg shadow">
+                  <h3 class="text-xl font-bold mb-2">Gestion de stages</h3>
+                  <p class="text-gray-300 mb-4">PHP/MySQL, Bootstrap, UML</p>
+                  <a href="https://github.com/DevKosX/GestionDesStagesProject" target="_blank"
+                    class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600">
+                    📂 Voir le projet sur GitHub
+                  </a>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">VS Code – IDE</h3>
+          <p class="text-gray-300 mb-2">Configuration avancée avec extensions Dev & AI, Git, Docker.</p>
+          <a href="https://github.com/MohaEss-prog/vscode-mini-ide" target="_blank"
+            class="inline-block bg-teal-500 text-white px-4 py-2 rounded hover:bg-teal-600">
+            🔗 Voir sur GitHub
+          </a>
+        </div>
+
+        <div class="bg-gray-700 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Cursor – AI IDE</h3>
+          <p class="text-gray-300 mb-2">IDE alimenté par IA avec explication de code, refactoring assisté.</p>
+        </div>
+
+        <div class="bg-gray-700 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Windsurf – IDE</h3>
+          <p class="text-gray-300 mb-2">Démo d’un éditeur d’interface web glisser-déposer (React, Tailwind).</p>
+        </div>
+
+        <div class="bg-gray-700 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Lovable – AI Frontend</h3>
+          <p class="text-gray-300 mb-2">Prototype UI généré par IA à partir d’instructions naturelles.</p>
+        </div>
+
+        <div class="bg-gray-700 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Subfram – Design AI Tool</h3>
+          <p class="text-gray-300 mb-2">Outil UI/UX génératif pour construire des interfaces épurées.</p>
+        </div>
+
+        <div class="bg-gray-700 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Claude Code+ – Terminal AI</h3>
+          <p class="text-gray-300 mb-2">Assistant en ligne de commande alimenté par IA.</p>
+        </div>
+
+        <div class="bg-gray-700 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Intégration OpenAI API</h3>
+          <p class="text-gray-300 mb-2">Appels d’API GPT pour générer, compléter et résumer du texte.</p>
+        </div>
+
+        <div class="bg-gray-700 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Sac à dos 0/1</h3>
+          <p class="text-gray-300 mb-2">C, Python, algo dynamique</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">WikiComptines TCP</h3>
+          <p class="text-gray-300 mb-2">C multithreadé, sockets TCP</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2">Sokoban Java</h3>
+          <p class="text-gray-300 mb-2">Swing, OOP, JUnit</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section id="skills" class="py-20 px-4 max-w-6xl mx-auto" data-aos="fade-up">
+      <h2 class="text-3xl font-semibold mb-8">Compétences</h2>
+
+      <div class="grid md:grid-cols-2 gap-6 text-gray-300">
+        
+        <!-- CYBER -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2 text-white">🛡️ Cybersécurité & Réseaux</h3>
+          <ul class="list-disc list-inside">
+            <li>Protocoles : TCP/IP, DNS, DHCP, OSI</li>
+            <li>Linux : permissions, logs, fail2ban</li>
+            <li>Outils : Wireshark, Nmap</li>
+            <li>Programmation défensive : C, Python, Shell</li>
+            <li>Connaissances : DoS, XSS, SQLi (OWASP)</li>
+            <li>Plateformes : TryHackMe, Root Me</li>
+          </ul>
+        </div>
+
+        <!-- DEV -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2 text-white">💻 Développement Logiciel</h3>
+          <ul class="list-disc list-inside">
+            <li>Langages : C, Java, Python, PHP, JS, OCaml</li>
+            <li>Front-end : HTML, CSS, Bootstrap, Swing</li>
+            <li>Multithreading, synchronisation (mutex/sémaphores)</li>
+            <li>Programmation fonctionnelle : OCaml</li>
+          </ul>
+        </div>
+
+        <!-- IA -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2 text-white">🧠 IA & Automatisation</h3>
+          <ul class="list-disc list-inside">
+            <li>OpenAI API (GPT, embeddings)</li>
+            <li>Claude Code+</li>
+            <li>Génération UI : Subfram, Lovable</li>
+          </ul>
+        </div>
+
+        <!-- DEVOPS -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2 text-white">🛠️ Environnements & DevOps</h3>
+          <ul class="list-disc list-inside">
+            <li>Linux (Ubuntu, Debian), Windows</li>
+            <li>Serveurs : NGINX, hébergement local</li>
+            <li>Conteneurs : Docker</li>
+            <li>CI/CD : introduction aux workflows</li>
+            <li>Outils : Git, GitHub, VS Code, Cursor</li>
+          </ul>
+        </div>
+
+        <!-- LANGUES -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2 text-white">🌍 Langues</h3>
+          <ul class="list-disc list-inside">
+            <li>Français : natif</li>
+            <li>Anglais : courant</li>
+          </ul>
+        </div>
+
+        <!-- CERTIFS -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2 text-white">📜 Certifications (en cours)</h3>
+          <ul class="list-disc list-inside">
+            <li>CompTIA Security+</li>
+            <li>Certified Ethical Hacker (CEH)</li>
+            <li>Google Cybersecurity Certificate</li>
+            <li>Microsoft Security Fundamentals</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+
+  <section id="education" class="py-20 px-4 max-w-4xl mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-6">Formation</h2>
+    <ul class="list-disc list-inside text-gray-300">
+      <li>EFREI Paris – Ingénieur Réseaux & Sécurité (2025–2028)</li>
+      <li>BUT Informatique – Sorbonne Paris Nord (2024–2025)</li>
+      <li>Licence Informatique – Sorbonne Paris Nord (2020–2024)</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="py-20 px-4 max-w-4xl mx-auto" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+    <form action="https://formspree.io/f/mnqewjrz" method="POST" class="space-y-4">
+      <input type="text" name="name" placeholder="Nom" class="w-full p-2 rounded bg-gray-800 text-white" required>
+      <input type="email" name="email" placeholder="Email" class="w-full p-2 rounded bg-gray-800 text-white" required>
+      <textarea name="message" rows="4" placeholder="Message" class="w-full p-2 rounded bg-gray-800 text-white" required></textarea>
+      <button type="submit" class="bg-teal-500 px-4 py-2 rounded hover:bg-teal-600">Envoyer</button>
+    </form>
+  </section>
+
+  <footer class="py-8 text-center text-gray-500 text-sm">
+    © 2025 Mohammed Essaoudi. Tous droits réservés.
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+    document.getElementById('darkToggle').addEventListener('click', () => {
+      document.body.classList.toggle('bg-white');
+      document.body.classList.toggle('text-black');
+      document.body.classList.toggle('bg-gray-900');
+      document.body.classList.toggle('text-white');
+    });
+  </script>
+</body>
+</html>
